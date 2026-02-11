@@ -1,0 +1,7 @@
+{
+  "name": "Bé Học Toán Vui 1.2",
+  "description": "An interactive and fun math learning application for 5-year-old children, featuring colorful games and friendly AI guidance.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
