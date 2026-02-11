@@ -25,7 +25,7 @@ export const getCheer = async (isSuccess: boolean): Promise<string> => {
   try {
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash-latest',
+      model: 'gemini-3-flash-preview',
       contents: isSuccess 
         ? "Hãy viết một câu khen ngợi ngắn gọn, vui nhộn bằng tiếng Việt dành cho bé 5 tuổi vừa làm đúng bài toán. Có kèm emoji."
         : "Hãy viết một câu động viên ngắn gọn, nhẹ nhàng bằng tiếng Việt dành cho bé 5 tuổi làm sai bài toán, khích lệ bé thử lại. Có kèm emoji.",
